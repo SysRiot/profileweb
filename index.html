@@ -1,0 +1,141 @@
+<!-- 
+===============================================================================
+  Proyecto: SysRiot Web Experience
+  Autor: SysRiot
+  GitHub: https://github.com/SysRiot
+  Discord: SysRiot
+  Descripción: Página principal interactiva con estética hacker/cyberpunk, 
+               incluye reproductor de audio, efectos visuales y contador de visitas.
+===============================================================================
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SysRiot</title>
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white">
+
+    <!-- PANTALLA DE BIENVENIDA PARA INICIAR AUDIO -->
+    <!-- WELCOME SCREEN TO START AUDIO -->
+    <div id="welcome-overlay">
+        <div class="welcome-content">
+            <h2 class="text-2xl font-bold mb-2">SysRiot</h2>
+            <p class="text-gray-400 mb-6">Esta experiencia contiene audio.</p>
+            <button id="enter-btn">ENTRAR</button>
+        </div>
+    </div>
+
+    <!-- EFECTOS VHS-TV ANTIGUA / EFFECTS OLD TV - VHS -->
+    <div id="vhs-overlay"></div>
+
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="assets/video/vid_rendi.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+    </video>
+
+    <div class="relative min-h-screen flex flex-col items-center justify-center p-4">
+
+        <div class="w-full max-w-sm mx-auto text-center space-y-4">
+            
+
+            <!-- CONTADOR VISTAS / VIEW COUNTER-->
+            <!-- PARA SACAR ACCEDER AL LINK: / TO ACCESS THE LINK: -->
+            <!--LINK: https://hitwebcounter.com  -->
+            <div id="visitor-counter" class="flex items-center justify-center">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=21114091&style=0007&nbdigits=5&type=page&initCount=0"
+                     title="Contador de visitas"
+                     alt="contador"
+                     class="h-6 ml-1"
+                />
+            </div>
+
+            <!-- FOTO DE PERFIL / PROFILE PICTURE -->
+            <img src="assets/img/PJsinFondo.png" alt="Avatar" class="fade-in fade-in-delay-1 w-28 h-28 rounded-full mx-auto border-2 border-gray-700 shadow-lg">
+
+            <!-- DESCRIPCION / DESCRIPTION -->
+            <div class="fade-in fade-in-delay-2">
+                <h1 class="text-4xl font-black rainbow-text">SysRiot</h1>
+                <p class="text-gray-300">Member of M-Society</p>
+            </div>
+
+            <!-- UBICACIÓN / LOCATION  -->
+            <div class="fade-in fade-in-delay-3 flex items-center justify-center gap-2 text-gray-400 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" class="neon-glow"><path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+                <span>Everywhere...</span>
+            </div>
+
+            <!-- MOD JUEGO / GAME MOD-->
+            <div class="fade-in fade-in-delay-4 glass-effect rounded-lg p-3 inline-flex items-center gap-3 text-left">
+                <img src="assets/img/iconplay.png" alt="Discord Avatar" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-bold text-sm">SysRiot</p>
+                    <p class="text-xs text-gray-300">Playing <span class="font-semibold text-white">programming</span></p>
+                </div>
+            </div>
+            
+
+            <!-- DISCORD -->
+            <!-- EL NOMBRE SE CAMBIA EN "SCRIPT.JS" -->
+            <!-- THE NAME IS CHANGED IN "SCRIPT.JS" -->
+            <div class="fade-in fade-in-delay-5 flex justify-center items-center gap-5 pt-2">
+                <button id="discord-copy-btn" title="Copiar Discord" class="text-gray-400 hover:text-white transition-transform duration-300 hover:scale-110 focus:outline-none">
+                    <svg class="neon-glow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 0 0-4.885-1.5152.0741.0741 0 0 0-.0785.0371c-.211.3753-.4464.8245-.6083 1.2495-1.8447-.276-3.68-.276-5.4868 0-.1619-.425-.3973-.8742-.6083-1.2495a.0741.0741 0 0 0-.0785-.0371 19.7363 19.7363 0 0 0-4.885 1.5152.069.069 0 0 0-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 0 0 .0312.0561c.448.3083.9237.5664 1.4013.7754a.073.073 0 0 0 .0842-.0276c.4616-.5763.875-1.224 1.224-1.913a.0714.0714 0 0 0-.041-.1004c-.324-.1433-.6327-.3028-.927-.4782a.0715.0715 0 0 1-.021-.0561c.0252-.093.0473-.1879.0671-.2828a.069.069 0 0 1 .0776-.037c.6804.246 1.3663.4606 2.0577.6317a.0705.0705 0 0 0 .077-.0215c.3336-.2753.6447-.5757.9323-.8964a.0714.0714 0 0 0 .0115-.0943c-.2878-.288-.57-.5852-.8393-.8964a.0714.0714 0 0 1 .0115-.1004c.2702-.2247.5383-.45.8064-.6753a.072.072 0 0 1 .0887-.0115c1.274 1.0243 2.7613 1.5516 4.268 1.5516s2.994-.5273 4.268-1.5516a.072.072 0 0 1 .0887.0115c.268.2253.5362.4506.8064.6753a.0714.0714 0 0 1 .0115.1004c-.2693.3112-.5515.6084-.8393.8964a.0714.0714 0 0 0 .0115.0943c.2876.3207.5987.621.9323.8964a.0705.0705 0 0 0 .077.0215c.6914-.171 1.3773-.3857 2.0577-.6317a.069.069 0 0 1 .0776-.037c.0198.095.0419.1898.0671.2828a.0715.0715 0 0 1-.021.0561c-.2944.1754-.6032.335-.927.4782a.0714.0714 0 0 0-.041.1004c.349.689.7624 1.3368 1.224 1.913a.073.073 0 0 0 .0842.0276c.4776-.209.9533-.467 1.4013-.7754a.0824.0824 0 0 0 .0312-.0561c.4182-4.478-.7344-9.012-2.6745-13.6602a.069.069 0 0 0-.032-.0277zM8.02 15.3312c-1.725.0001-3.1212-1.4024-3.1212-3.1343s1.3962-3.1343 3.1212-3.1343c1.725 0 3.1212 1.4024 3.1212 3.1343.0001 1.7319-1.3961 3.1343-3.1212 3.1343zm7.98-3.1343c0 1.7319-1.3962 3.1343-3.1212 3.1343-1.725 0-3.1212-1.4024-3.1212-3.1343s1.3962-3.1343 3.1212-3.1343c1.725.0001 3.1212 1.4024 3.1212 3.1343z"/></svg>
+                </button>
+
+                <!-- GITHUB-->
+                <a href="https://github.com/SysRiot" target="_blank" class="text-gray-400 hover:text-white transition-transform duration-300 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16" class="neon-glow"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                </a>
+
+                <!-- INSTAGRAM -->
+                 <!--
+                <a href="https://www.instagram.com/yourinsta" target="_blank" class="text-gray-400 hover:text-white transition-transform duration-300 hover:scale-110">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="neon-glow">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                    </svg>
+                </a>
+                -->
+
+            </div>
+            <span id="copy-notification">¡Copiado!</span>
+        </div>
+
+        <audio id="music-player" src="assets/aud/aud_pagperfil.mp3" preload="auto"></audio>
+        
+        <div class="fixed bottom-0 left-0 right-0 p-4">
+            <div class="glass-effect max-w-sm mx-auto rounded-lg p-3 flex items-center gap-4 fade-in fade-in-delay-5">
+                <img src="assets/img/album.png" alt="Album Art" class="w-14 h-14 rounded-md">
+                <div class="flex-grow">
+                    <p class="font-bold text-sm">Dos Mil 16</p>
+                    <p class="text-xs text-gray-300">Bad Bunny</p>
+                    <div class="mt-1">
+                        <div class="w-full bg-gray-700 rounded-full h-1">
+                            <div id="progress-bar" class="bg-white h-1 rounded-full" style="width: 0%;"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-400 mt-1">
+                            <span id="current-time">0:00</span>
+                            <span id="total-duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
