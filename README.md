@@ -8,6 +8,8 @@ El diseño se basa en colores neón intensos (verde lima, púrpura eléctrico), 
 
 [![undefined-Imgur.png](https://i.postimg.cc/zvNh5JwL/undefined-Imgur.png)](https://postimg.cc/dkW3jcxv)
 
+[![Captura-de-pantalla-2025-07-15-120759.png](https://i.postimg.cc/Y0ytRRSp/Captura-de-pantalla-2025-07-15-120759.png)](https://postimg.cc/m1Cx2QMq)
+
 ## ✨ Características destacadas
 
 - Fondo animado con video en pantalla completa.
@@ -56,12 +58,8 @@ O simplemente ábrelo haciendo doble clic en `index.html`.
 
 ## ✒️ Autor
 
-Desarrollado con ⚡ y visión creativa por [**SysRiot**](https://github.com/SysRiot).  
+Desarrollado por [**SysRiot**](https://github.com/SysRiot).  
 Siéntete libre de usarlo, modificarlo y adaptarlo a tus ideas.
-
-## 🖼️ Captura de pantalla
-
-> *(Puedes añadir aquí una imagen para mostrar cómo se ve la interfaz, si lo deseas)*
 
 ## 📜 Licencia
 
