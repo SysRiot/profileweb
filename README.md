@@ -6,7 +6,7 @@ El diseño se basa en colores neón intensos (verde lima, púrpura eléctrico), 
 
 ## 🖼️ Captura de pantalla
 
-![Preview](https://imgur.com/a/yULhtOW.png)
+![Preview](https://imgur.com/a/yULhtOW)
 
 ## ✨ Características destacadas
 
