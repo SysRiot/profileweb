@@ -43,26 +43,9 @@ El diseño se basa en colores neón intensos (verde lima, púrpura eléctrico), 
 📄 style.css
 📄 script.js
 ```
-
-## 🚀 Cómo usar
-
-Clona el repositorio y abre el archivo `index.html` en tu navegador:
-
-```bash
-git clone https://github.com/SysRiot/profileweb.git
-cd profileweb
-start index.html
-```
-
-O simplemente ábrelo haciendo doble clic en `index.html`.
-
 ## ✒️ Autor
 
 Desarrollado por [**SysRiot**](https://github.com/SysRiot).  
 Siéntete libre de usarlo, modificarlo y adaptarlo a tus ideas.
-
-## 📜 Licencia
-
-Este proyecto está disponible bajo la Licencia MIT. Eres libre de usarlo tanto para fines personales como comerciales, siempre y cuando des el crédito correspondiente.
 
 ---
