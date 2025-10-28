@@ -1,9 +1,4 @@
 #  Cyberpunk Glitch Interface
-
-**Cyberpunk Glitch Interface Profile**, un proyecto web desarrollado por **SysRiot** que fusiona el estilo hacker con una estética cyberpunk oscura, efectos VHS y animaciones de glitch envolventes. Este entorno está pensado para impresionar visualmente desde el primer segundo, ideal para páginas personales, portfolios creativos o presentaciones digitales con carácter.
-
-El diseño se basa en colores neón intensos (verde lima, púrpura eléctrico), superposiciones de video a pantalla completa, filtros visuales tipo "VHS glitch" y transiciones suaves al estilo holográfico. Todos los elementos han sido creados usando únicamente HTML y CSS puro, con un enfoque responsive para asegurar compatibilidad total con móviles y escritorios.
-
 ##  Captura de pantalla
 
 [![undefined-Imgur.png](https://i.postimg.cc/zvNh5JwL/undefined-Imgur.png)](https://postimg.cc/dkW3jcxv)
@@ -21,13 +16,6 @@ El diseño se basa en colores neón intensos (verde lima, púrpura eléctrico), 
 - Texto animado con efecto arcoíris y glow dinámico.
 - Completamente responsive: se adapta y optimiza en pantallas pequeñas.
 - Estética ideal para proyectos de estilo hacker, retrofuturismo o branding creativo personal.
-
-##  Tecnologías utilizadas
-
-- HTML5
-- CSS3 (con uso intensivo de animaciones, efectos y filtros)
-- Google Fonts: Inter
-- Estilo y filosofía: glitch, vhs, cyberpunk, hacker underground
 
 ##  Estructura del proyecto
 
